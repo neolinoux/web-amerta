@@ -1,0 +1,14 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/livewire-handler.js": "/js/livewire-handler.js",
+    "/js/calendar.js": "/js/calendar.js",
+    "/js/editor.js": "/js/editor.js",
+    "/js/aos.js": "/js/aos.js",
+    "/js/swiper.js": "/js/swiper.js",
+    "/js/viewer.js": "/js/viewer.js",
+    "/js/sambat.js": "/js/sambat.js",
+    "/css/app.css": "/css/app.css",
+    "/css/announcement.css": "/css/announcement.css",
+    "/css/animation.css": "/css/animation.css",
+    "/css/chat.css": "/css/chat.css"
+}

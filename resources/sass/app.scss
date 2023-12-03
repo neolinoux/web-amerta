@@ -1,0 +1,129 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "notyf/notyf.min.css";
+
+@font-face {
+    font-family: HolidayFree;
+    src: url(../fonts/HolidayFree.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.anchor-button {
+    @apply py-2 px-4 font-poppins rounded no-underline focus:outline-none focus:ring disabled:opacity-25 transition text-sm tracking-wider flex items-center;
+}
+
+.button-small {
+    @apply py-3 px-6 text-xs;
+}
+
+.button-medium {
+    @apply py-3 px-8 text-sm;
+}
+
+.button-large {
+    @apply py-4 px-12 text-base;
+}
+
+.hero {
+    background-image: url("../img/hero-background.png");
+    @apply bg-center bg-cover bg-no-repeat;
+}
+
+.background {
+    background-image: url("../img/background.jpg");
+    min-height: 450px;
+    @apply bg-center bg-cover bg-no-repeat bg-fixed;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+/* firefox */
+* {
+    scrollbar-width: thin;
+}
+
+/* width */
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: #aeaec2;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+    background: #cacaca;
+}
+
+.prokerImgSwiper .swiper-slide img {
+    @apply object-cover h-60 w-full rounded-md scale-75;
+}
+
+.prokerImgSwiper .swiper-slide-active img {
+    @apply scale-95;
+}
+
+$colors: "green", "red", "blue", "orange", "yellow", "purple", "lime", "pink";
+
+@each $color in $colors {
+    .calendar-#{$color} {
+        @apply bg-#{$color}-500;
+    }
+}
+
+.proker {
+    @apply relative cursor-pointer;
+}
+
+.proker img {
+    @apply object-cover h-64 w-full;
+}
+
+.proker .proker-hover {
+    @apply absolute top-0 left-0 bottom-0 right-0 invisible opacity-0 bg-main transition duration-500 ease-in-out;
+}
+
+.proker .proker-hover .proker-hover-inner {
+    @apply absolute left-1/2 top-1/2 invisible opacity-0 text-center w-full px-2 font-poppins  transition duration-500 ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.proker .proker-hover .proker-hover-inner h3 {
+    @apply transition-all duration-500 ease-in-out;
+    bottom: -30px;
+}
+
+.proker:hover .proker-hover,
+.proker:hover .proker-hover .proker-hover-inner {
+    @apply opacity-90 visible;
+}
+
+.proker:hover .proker-hover .proker-hover-inner h3 {
+    bottom: 0;
+}
+
+.modal-center > div > div > div {
+    @apply items-center;
+}
+
+.dropdown-notification div:first-child {
+    position: unset;
+    @apply sm:relative;
+}

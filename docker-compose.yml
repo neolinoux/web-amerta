@@ -1,0 +1,106 @@
+version: "3.1"
+
+networks:
+    laravel:
+
+volumes:
+    angkatan:
+
+services:
+    nginx:
+        image: "nginx:latest"
+        container_name: nginx
+        working_dir: "/var/www/html"
+        volumes:
+            - "./:/var/www/html"
+            - "./.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf"
+        ports:
+            - "8080:80"
+        depends_on:
+            - php
+            - postgres
+            - mailhog
+        networks:
+            - laravel
+
+    mailhog:
+        image: "mailhog/mailhog:latest"
+        container_name: mailhog
+        ports:
+            - "8081:8025"
+        networks:
+            - laravel
+
+    postgres:
+        image: postgres:alpine
+        container_name: postgres
+        environment:
+            - POSTGRES_USER=${DB_USERNAME:-postgres}
+            - POSTGRES_PASSWORD=${DB_PASSWORD:-secret}
+            - POSTGRES_DB=${DB_DATABASE:-laravel}
+        volumes:
+            - "angkatan:/var/lib/postgresql/data"
+        networks:
+            - laravel
+
+    pgweb:
+        image: "sosedoff/pgweb"
+        container_name: pgweb
+        ports:
+            - "8082:8081"
+        restart: always
+        networks:
+            - laravel
+        environment:
+            - SESSIONS=1
+            - LOCK_SESSION=TRUE
+            - DATABASE_URL=postgres://${DB_USERNAME:-postgres}:${DB_PASSWORD:-secret}@postgres:5432/${DB_DATABASE:-laravel}?sslmode=disable
+        depends_on:
+            - postgres
+
+    php:
+        build:
+            context: .docker/php
+            dockerfile: Dockerfile
+            args:
+                - PHPUSER=${PHPUSER:-www-data}
+                - PHPGROUP=${PHPGROUP:-www-data}
+        container_name: php
+        working_dir: "/var/www/html"
+        depends_on:
+            - postgres
+        volumes:
+            - "./:/var/www/html"
+        networks:
+            - laravel
+
+    composer:
+        image: "composer:latest"
+        container_name: composer
+        profiles: ["tools"]
+        working_dir: "/var/www/html"
+        volumes:
+            - "./:/var/www/html"
+        depends_on:
+            - php
+        entrypoint: ["composer"]
+        networks:
+            - laravel
+
+    artisan:
+        build:
+            context: .docker/php
+            dockerfile: Dockerfile
+            args:
+                - PHPUSER=${PHPUSER:-www-data}
+                - PHPGROUP=${PHPGROUP:-www-data}
+        container_name: artisan
+        profiles: ["tools"]
+        volumes:
+            - ./:/var/www/html:delegated
+        depends_on:
+            - postgres
+        working_dir: /var/www/html
+        entrypoint: ["php", "/var/www/html/artisan"]
+        networks:
+            - laravel
