@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+footer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer li {
+    list-style: none;
+}
+
+/*=====  FOOTER  =====*/
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'left middle right'
+        'bottom bottom bottom';
+    background-color: #24285B;
+    gap: 10px;
+    padding: 5px 0 0 0;
+}
+
+.left { grid-area: left; }
+.middle { grid-area: middle; }
+.right { grid-area: right; }
+.bottom { grid-area: bottom; }
+
+footer > div {
+    background: #24285B;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 50px;
+}
+
+.left h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.right {
+    text-align: center;
+}
+
+.right h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.right .follow-icon {
+    margin-right: 0;
+    margin-left: 0;
+    height: 30px;
+}
+
+footer .fa {   
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+footer .fa:hover {
+    color: #0099FF;
+    transform: scale(150%);
+}
+
+.bottom {
+    width: 100%;
+    background-color: #14173D;
+}
+
+.bottom p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+/* ===== RESPONSIVE FOOTER, KALAU DI KODEKU YANG FULL, KONTEN WEB JUGA DI SINI RESPONSIVENYA ====== */
+
+/* Extra super-saiyan small X3 Pro devices (phones, 360px and down) */
+@media only screen and (max-width: 420px) {
+    footer {
+        height: 200px;
+        top: 1995px;
+    }
+        
+    .left {
+        width: 100%;
+        height : 150px;
+    }
+        
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 15px;
+    }
+        
+    .left .about-desc {
+        width: 175px;
+        margin: 0 0 0 12.5%;
+        font-size: 11px;
+    }
+            
+    .middle {
+        width: 100%;
+        height : 150px;
+    }
+            
+    .right {
+        width: 100%;
+        height : 150px;
+        }
+            
+    .right h3 {
+        font-size: 15px;
+        margin: 5% 0 0 0;
+    }
+        
+    .right .follow-icon {
+        font-size: 9px;
+        margin: 5% 0 0 0;
+    }
+
+    .right .follow-icon li {
+        width: 30px;
+    }
+        
+    .bottom {
+        height : 50px;
+    }
+        
+    .bottom p {
+        font-size: 11px;
+        margin-top: 2.5%;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 420px) {
+    /* Responsive Footer */
+    footer {
+        height: 200px;
+        top: 1995px;
+    }
+        
+    .left {
+        width: 100%;
+        height : 150px;
+    }
+        
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 18px;
+    }
+        
+    .left .about-desc {
+        width: 200px;
+        margin: 0 0 0 12.5%;
+        font-size: 11px;
+    }
+            
+    .middle {
+        width: 100%;
+        height : 150px;
+    }
+            
+    .right {
+        width: 100%;
+        height : 150px;
+        }
+            
+    .right h3 {
+        font-size: 18px;
+        margin: 4% 0 0 0;
+    }
+        
+    .right .follow-icon {
+        font-size: 9px;
+        width: 100%;
+        margin: 4% 0 0 0;
+    }
+
+    .right .follow-icon li {
+        width: 30px;
+    }
+        
+    .bottom {
+        height : 50px;
+    }
+        
+    .bottom p {
+        margin-top: 2%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Responsive Footer */
+    footer {
+        height: 200px;
+        top: 2155.5px;
+    }
+    
+    .left {
+        width: 100%;
+        height : 150px;
+    }
+    
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 22px;
+    }
+    
+    .left .about-desc {
+        width: 275px;
+        margin: 2% 0 0 12.5%;
+        font-size: 15px;
+    }
+        
+    .middle {
+        width: 100%;
+        height : 150px;
+    }
+        
+    .right {
+        width: 100%;
+        height : 150px;
+        }
+        
+    .right h3 {
+        font-size: 22px;
+        margin: 6% 0 0 0;
+    }
+    
+    .right .follow-icon {
+        font-size: 12px;
+        width: 100%;
+        margin: 7% 0 0 0;
+    }
+    
+    .right .follow-icon li {
+        width: 40px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+    
+    .bottom p {
+        margin-top: 1%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Responsive Footer */
+    footer {
+        height: 250px;
+        top: 2235px;
+    }
+    
+    .left {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 24px;
+    }
+    
+    .left .about-desc {
+        width: 270px;
+        margin: 4% 0 0 12.5%;
+        font-size: 15px;
+    }
+        
+    .middle {
+        width: 100%;
+        height : 190px;
+    }
+        
+    .right {
+        width: 100%;
+        height : 190px;
+        }
+        
+    .right h3 {
+        font-size: 24px;
+        margin: 7% 0 0 0;
+    }
+    
+    .right .follow-icon {
+        width: 100%;
+        margin: 8% 0 0 0;
+    }
+
+    .right .follow-icon li {
+        width: 40px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+    
+    .bottom p {
+        margin-top: 1.5%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Responsive Footer */
+    footer {
+        height: 250px;
+        top: 2235px;
+    }
+
+    .left {
+        width: 100%;
+        height : 190px;
+    }
+
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 15%;
+        font-size: 27px;
+    }
+
+    .left .about-desc {
+        width: 325px;
+        margin: 3.5% 0 0 15%;
+        font-size: 18px;
+    }
+    
+    .middle {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right h3 {
+        font-size: 27px;
+        margin: 7% 0 0 0;
+    }
+
+    .right .follow-icon {
+        width: 100%;
+        margin: 6% 0 0 0;
+        font-size: 15px;
+    }
+
+    .right .follow-icon li {
+        width: 50px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+
+    .bottom p {
+        margin-top: 1.25%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+    /* Responsive Footer */
+    footer {
+        height: 250px;
+        top: 2235px;
+    }
+
+    .left {
+        width: 100%;
+        height : 190px;
+    }
+
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 15%;
+        font-size: 29px;
+    }
+
+    .left .about-desc {
+        width: 375px;
+        margin: 2.5% 0 0 15%;
+        font-size: 20px;
+    }
+    
+    .middle {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right h3 {
+        font-size: 29px;
+        margin: 7% 0 0 0;
+    }
+
+    .right .follow-icon {
+        width: 100%;
+        margin: 6% 0 0 0;
+        font-size: 15px;
+    }
+
+    .right .follow-icon li {
+        width: 50px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+
+    .bottom p {
+        margin-top: 1.25%;
+    }
+}
