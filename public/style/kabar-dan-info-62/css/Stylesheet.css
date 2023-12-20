@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    background: #0166B4;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+body {
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto auto; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+        "header header header"
+        "section section section"
+        "section section section"
+        "footer footer footer";
+}
+
+header { grid-area: header; }
+section { grid-area: left-menu; }
+footer { grid-area: footer; }
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/*===== HEADER DAN NAVBAR =====*/
+/* ============= HEADER ============= */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1;
+    height: 75px;
+    background-color: #0099FF;
+    /* box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.10); */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* === Logo === */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+header .logo .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .logo p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+}
+
+/* === Navigation === */
+header nav {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .navbar li {
+    margin: 0 5px;
+}
+
+header nav .navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+header nav .navbar .icons {
+    cursor: pointer;
+}
+
+header nav .navbar .icons i {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0.2s;
+    }
+}
+
+
+/*===== SECTION KONTEN =====*/
+section {
+    position: absolute;
+    margin:0;
+    width: 100%;
+    top: 75px;
+}
+/*===== KABAR 62 =====*/
+/* 1.Kotak Kabar 62 */
+.kabar-62 {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+}
+/* 2.Judul Kabar 62 */
+.kabar-62 h1 {
+    position: absolute;
+    width: 800px;
+    height: 140px;
+    /*top: 15%*/
+
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 143px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF; 
+    /* border: 1px solid black;*/
+}
+/* 3.Deskripsi Kabar 62 */
+.kabar-62 .desc {
+    position: absolute;
+    height: 180px;
+    
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    /* border: 1px solid black;*/
+}
+/* 4.Card Slider Kabar 62 */
+.kabar-62 .slider {
+    position: absolute;
+    overflow: hidden;
+}
+/* 5. Background  */
+.kabar-62 .bg-side {
+    position: absolute;
+    right: 0%;
+}
+
+.kabar-62 .bg-slider {
+    position: absolute;
+    right: 0%;
+    background: #0099FF;
+    border-radius: 15px 0px 0px 15px;
+}
+
+/*===== INFO 62 =====*/
+/* 1.Kotak Kabar 62 */
+.info-62 {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+}
+/* 2.Judul Kabar 62 */
+.info-62 h1 {
+    position: absolute;
+    width: 800px;
+    height: 140px;
+    /*top: 15%*/
+
+    font-family:'poppins';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 143px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    color: #FFFFFF; 
+    /* border: 1px solid black;*/
+}
+/* 3.Deskripsi Kabar 62 */
+.info-62 .desc {
+    position: absolute;
+    height: 180px;
+    
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+    /* border: 1px solid black;*/
+}
+/* 4.Card Slider Kabar 62 */
+.info-62 .slider {
+    position: absolute;
+    overflow: hidden;
+}
+/* 5. Background  */
+.info-62 .bg-side {
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+}
+
+.info-62 .bg-slider {
+    position: absolute;
+    left: 0%;
+    background: #0099FF;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/*=== KONTEN SLIDER ===*/
+/*1. Kotak yang memuat konten slider */
+.slider .main-card {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 1s;
+    /*border: 1px solid rgb(0, 157, 255);*/
+}
+/*2. Card Slider */
+.slider .main-card .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*3. Card ke-n */
+.main-card .cards .card {
+    position: relative;
+    /* width: 300px;
+    height: 450px; */
+    background: linear-gradient(149.78deg, #14173D 17.83%, rgba(20, 23, 61, 0) 179.93%);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.35s ease;
+}
+
+.main-card .cards .card:hover {
+    transform: translateY(-12.5px);
+}
+/*4. kotak isi konten card */
+.cards .card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*5. mengatur kotak foto*/
+.cards .card .card-content .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+/*6. mengatur foto*/
+.card .card-content .image img {
+    /* width: 300px; 
+    height: 260px; */
+    /*object-fit: cover;*/
+    border-radius: 15px;
+}
+
+.card .card-content .image .bottom-side-1 img {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 0px;
+}
+
+.card .card-content .image .bottom-side-2 {
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+.card .card-content .image .bottom-side-2 img {
+    border-radius: 0px;
+}
+
+.card .card-content .image .bottom-side-2 p {
+    color: #FFFFFF;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*7. judul konten */
+.details .title {
+    font-weight: 500;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #FBDC4C;
+}
+/*8. detail konten */
+.details .detail {
+    top : 15%;
+    /* atur posisi text*/
+    color: #FFFFFF;
+    font-family: 'poppins', sans-serif;
+    line-height: 18px;
+    text-align: justify;
+    margin: 10px 5px 5px 5px;
+    padding: 0 5px 0 5px;
+}
+
+/*=== EFEK OVERLAY CARD ===*/
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 139, 11, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+/* read more button di tengah card */
+.read-more-btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(red, green, blue, 0.2);
+}
+
+.read-more-btn:hover {
+    color: #FFFFFF;
+    background-color: lightskyblue;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.image:hover .overlay {
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+/*==== DOT UNTUK SLIDER ====*/
+.slider .button{
+    position: relative;
+    width: 225px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #FBDC4C;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button label.active{
+    width: 35px;
+}
+
+.slider .btn-more {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-more button {
+    width: 100px;
+    height: 40px;
+    background: #0CCA98;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+    border: none;
+    color: #FFFFFF;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-more button:hover {
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-color: #14173D;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+/* mengatur perubahan dan pergerakan card ketika slide */
+#one:checked ~ .button .one{
+    width: 35px;
+}
+#one:checked ~ .button .two{
+    width: 15px;
+}
+#one:checked ~ .button .three{
+    width: 15px;
+}
+#two:checked ~ .button .one{
+    width: 15px;
+}
+#two:checked ~ .button .two{
+    width: 35px;
+}
+#two:checked ~ .button .three{
+    width: 15px;
+}
+#three:checked ~ .button .one{
+    width: 15px;
+}
+#three:checked ~ .button .two{
+    width: 15px;
+}
+#three:checked ~ .button .three{
+    width: 35px;
+}
+#four:checked ~ .button .four{
+    width: 35px;
+}
+#four:checked ~ .button .five{
+    width: 15px;
+}
+#four:checked ~ .button .six{
+    width: 15px;
+}
+#five:checked ~ .button .four{
+    width: 15px;
+}
+#five:checked ~ .button .five{
+    width: 35px;
+}
+#five:checked ~ .button .six{
+    width: 15px;
+}
+#six:checked ~ .button .four{
+    width: 15px;
+}
+#six:checked ~ .button .five{
+    width: 15px;
+}
+#six:checked ~ .button .six{
+    width: 35px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+/*=====  FOOTER  =====*/
+footer {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'left middle right'
+        'left middle right'
+        'bottom bottom bottom';
+    background-color: #24285B;
+    gap: 10px;
+    padding: 5px 0 5px 0;
+}
+
+.left { grid-area: left; }
+.middle { grid-area: middle; }
+.right { grid-area: right; }
+.bottom { grid-area: bottom; }
+
+footer > div {
+    background: #24285B;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 50px;
+}
+
+.left h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.right {
+    text-align: center;
+}
+
+.right h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.right .follow-icon {
+    margin-right: 0;
+    margin-left: 0;
+    height: 30px;
+}
+
+footer .fa {   
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+footer .fa:hover {
+    color: #0099FF;
+    transform: scale(150%);
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #14173D;
+}
+
+.bottom p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}

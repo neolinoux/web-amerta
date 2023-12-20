@@ -1,0 +1,1028 @@
+body {
+    background-color: #0099FF;
+
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+/* about */
+#about {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#about h1 {
+    font-size: 50px;
+}
+
+#about p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 70%;
+}
+
+/* visi misi */
+
+#visi_misi {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#visi_misi h1 {
+    font-size: 40px;
+
+}
+
+
+#visi_misi .visi {
+    padding: 45px;
+    background-color: #0166B4;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+#visi_misi p {
+    font-size: 18px;
+}
+
+#misi {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+#misi .misi {
+    background-color: #0166B4;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 25px;
+}
+
+#misi .misi p {
+    display: none;
+}
+
+#misi .misi:hover p {
+    display: block;
+}
+
+/* logo */
+#logo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 55px auto;
+}
+
+#logo h1 {
+    font-size: 40px;
+}
+
+#logo p {
+    font-size: 18px;
+}
+
+#logo .logo_content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+#logo .logo_content .logo {
+    background-color: #fff;
+    margin-right: 100px;
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+#logo .logo_content .desc_logo p {
+    text-align: justify;
+}
+
+/* maskot */
+#maskot {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#maskot h1 {
+    font-size: 40px;
+}
+
+#maskot p {
+    font-size: 18px;
+}
+
+#maskot .maskot_content {
+    margin-top : 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+#maskot .maskot_content .maskot {
+    background-color: #0000;
+    margin-left: 50px;
+    height: max-content;
+    padding: 30px;
+    border-radius: 100px;
+}
+
+#maskot .maskot_content .desc_maskot p {
+    text-align: justify;
+}
+
+/* Kreasi 62 */
+.profil {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #005698;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 150px;
+}
+
+.profil .kenalan {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.profil .nav_div {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    max-width: 70%;
+}
+
+.profil .nav_div>label {
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    width: 14.28%;
+    padding-top: 15px;
+    z-index: 1;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.profil .nav_div>label:hover {
+    background-color: #0d395748;
+}
+
+/*  */
+
+.profil .nav_div .slider {
+    width: 14.28%;
+    height: 50px;
+    background-color: #0099FF;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+#bph:checked~.nav_div label.bph,
+#hpd:checked~.nav_div label.hpd,
+#it:checked~.nav_div label.it,
+#internal:checked~.nav_div label.internal,
+#eo:checked~.nav_div label.eo,
+#pko:checked~.nav_div label.pko,
+#akademik:checked~.nav_div label.akadademik {
+    color: #fff;
+}
+
+.nav_div label i {
+    padding-right: 7px;
+}
+
+
+.profil input[type="radio"] {
+    display: none;
+}
+
+#bph:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+#hpd:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+#it:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+#internal:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+#eo:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+#pko:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+#akademik:checked~.nav_div label:hover {
+    z-index: 0;
+}
+
+
+#pko:checked~.nav_div .slider {
+    left: 0%;
+}
+
+
+#hpd:checked~.nav_div .slider {
+    left: 14.28%;
+}
+
+#it:checked~.nav_div .slider {
+    left: 28.56%;
+}
+
+#internal:checked~.nav_div .slider {
+    left: 42.84%;
+}
+
+#eo:checked~.nav_div .slider {
+    left: 57.12%;
+}
+
+#pko:checked~.nav_div .slider {
+    left: 71.4%;
+}
+
+#akademik:checked~.nav_div .slider {
+    left: 85.68%;
+}
+
+
+section .bagian {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    margin-left: 12%;
+}
+
+section .bagian h2 {
+    color: #fff;
+}
+
+section .bagian .isi_bag {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+section .bagian .isi_bag .atas img {
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 20%;
+}
+
+section .card {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    margin-right: 45px;
+}
+
+section .card h4,
+section .card p {
+    margin: 0;
+}
+
+
+section .bagian {
+    display: none;
+}
+
+#bph:checked~section .content_bph,
+#hpd:checked~section .content_hpd,
+#it:checked~section .content_it,
+#internal:checked~section .content_internal,
+#eo:checked~section .content_eo,
+#pko:checked~section .content_pko,
+#akademik:checked~section .content_akademik {
+    display: block;
+}
+
+/* Karikatur */
+.geser {
+    width: 100%;
+    height: max-content;
+}
+
+
+.jdul_tim {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.jdul.tim h2 {
+    font-size: 25px;
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+
+#tes h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 200px;
+}
+
+#timeline {
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#timeline::after {
+    content: '';
+    position: absolute;
+    height: 6px;
+    width: 95%;
+    background-color: white;
+    top: 10%;
+    left: 2.5%;
+}
+
+.kontainer {
+    padding: 10px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 350px;
+    height: 200px;
+    color: white;
+}
+
+
+.kiri {
+    position: relative;
+    top: -150px;
+
+}
+
+.kanan {
+    position: relative;
+    top: 100px;
+}
+
+.kiri ::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #0CCA98;
+    border: 4px solid #fff;
+    top: 80%;
+    left: 45%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.kanan ::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #0CCA98;
+    border: 4px solid #fff;
+    top: -48%;
+    left: 45%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline a {
+    padding: 0;
+    margin: 0;
+}
+
+.karikatur {
+    position: absolute;
+    background-color: #0CCA98;
+    color: #fff;
+    border: none;
+    padding: 14px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    top: 100%;
+    right: 47.5%;
+}
+
+.karikatur:hover {
+    background-color: #226d59;
+}
+
+
+/* Responsive */
+@media only screen and (max-width : 420px) {
+    #tes h3 {
+        margin-bottom: 50px;
+    }
+
+    #timeline {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #timeline::after {
+        height: 90%;
+        width: 5px;
+        left: 50%;
+        top: 7%;
+    }
+
+    .kontainer {
+        width: 200px;
+        height: 200px;
+        left: 0;
+    }
+
+    .kiri {
+        top: 0%;
+        left: -120px;
+    }
+
+    .kanan {
+        top: 0%;
+        left: 120px;
+    }
+
+    .kiri ::after {
+        top: 50%;
+        left: 206px;
+    }
+
+
+
+    .kanan ::after {
+        top: 50%;
+        left: -33px;
+    }
+
+    #logo .logo_content,
+    #maskot .maskot_content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #logo .logo_content .logo {
+        margin-right: 0px;
+    }
+
+    #maskot .maskot_content .maskot {
+        margin-left: 0px;
+    }
+
+    #timeline {
+        font-size: small;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    .kontainer {
+        text-align: center;
+    }
+
+    .kontainer h2 {
+        font-size: 16px;
+    }
+
+  
+    .kiri {
+        padding-top: 50px;
+        margin-left: 50px;
+    }
+
+    .kiri p {
+        width: 50%;
+        margin-left: 40px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .kanan {
+        margin-right: 80px;
+        padding: 0;
+        padding-top: 70px;
+    }
+
+    .kanan p {
+        width: 50%;
+        margin-left: 55px;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    .kiri ::after {
+        top: 50%;
+        margin-left: -25px;
+    }
+
+    .kanan ::after {
+        margin-left: 19%;
+    }
+
+    .profil {
+
+        position: relative;
+        padding: 20px 0px;
+    }
+
+    .profil .nav_div>label {
+        overflow: hidden;
+        font-size: 9px;
+    }
+
+    .profil .nav_div {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        margin-right: 100px;
+        margin-left: 1%;
+        max-width: 90%;
+    }
+
+    .profil .bagian {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+
+
+    .profil .bagian h2 {
+        margin-top: 150px;
+    }
+
+    section .bagian .isi_bag .atas img {
+        width: 45%;
+        margin: 10px 0 0 10px;
+    }
+
+    a .karikatur {
+        right: 37%;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width : 600px) {
+    @media only screen and (min-width : 420px) {
+        #tes h3 {
+            margin-bottom: 50px;
+        }
+
+        #timeline {
+            height: auto;
+            flex-direction: column;
+        }
+
+        #timeline::after {
+            height: 90%;
+            width: 5px;
+            left: 50%;
+            top: 7%;
+        }
+
+        .kontainer {
+            width: 200px;
+            height: 200px;
+            left: 0;
+        }
+
+        .kiri {
+            top: 0%;
+            left: -120px;
+        }
+
+        .kanan {
+            top: 0%;
+            left: 120px;
+        }
+
+        .kiri ::after {
+            top: 50%;
+            left: 206px;
+        }
+
+
+
+        .kanan ::after {
+            top: 50%;
+            left: -33px;
+        }
+
+        #logo .logo_content,
+        #maskot .maskot_content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #logo .logo_content .logo {
+            margin-right: 0px;
+        }
+
+        #maskot .maskot_content .maskot {
+            margin-left: 0px;
+        }
+
+        #timeline {
+            font-size: small;
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+            max-width: 90%;
+        }
+
+        .kontainer {
+            text-align: center;
+        }
+
+        .kontainer h2 {
+            font-size: 16px;
+        }
+
+        .kiri {
+            padding-top: 50px;
+        }
+
+        .kiri p {
+            width: 50%;
+            margin-left: 40px;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .kanan {
+            margin-right: 80px;
+            padding: 0;
+            padding-top: 70px;
+        }
+
+        .kanan p {
+            width: 50%;
+            margin-left: 55px;
+            text-align: center;
+            padding: 0;
+        }
+
+
+        .kiri ::after {
+            top: 50%;
+        }
+
+        .kanan ::after {
+            margin-left: 19%;
+        }
+
+        .profil {
+
+            position: relative;
+            padding: 20px 0px;
+        }
+
+        .profil .nav_div>label {
+            overflow: hidden;
+            font-size: 10px;
+        }
+
+        .profil .nav_div {
+            position: absolute;
+            left: 5%;
+            width: 90%;
+            margin-right: 100px;
+            margin-left: 1%;
+            max-width: 90%;
+        }
+
+        .profil .bagian {
+            max-width: 90%;
+            margin-left: 5%;
+        }
+
+
+
+        .profil .bagian h2 {
+            margin-top: 150px;
+        }
+
+        section .bagian .isi_bag .atas img {
+            width: 45%;
+            margin: 10px 0 0 10px;
+        }
+
+        a .karikatur {
+            right: 42%;
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+    @media only screen and (min-width : 600px) {
+        #tes h3 {
+            margin-bottom: 50px;
+        }
+
+        #timeline {
+            height: auto;
+            flex-direction: column;
+        }
+
+        #timeline::after {
+            height: 90%;
+            width: 5px;
+            left: 50%;
+            top: 7%;
+        }
+
+        .kontainer {
+            width: 200px;
+            height: 200px;
+            left: 0;
+        }
+
+        .kiri {
+            top: 0%;
+            left: -120px;
+            padding-top: 80px;
+        }
+
+        .kanan {
+            padding-top: 70px;
+            top: 0%;
+            left: 120px;
+        }
+
+        .kiri ::after {
+            top: 50%;
+            left: 206px;
+        }
+
+        .kanan ::after {
+            top: 50%;
+            left: -33px;
+        }
+
+
+
+
+        section .bagian h2 {
+            align-items: center;
+            text-align: center;
+            padding-left: 55px;
+        }
+
+        .profil .nav_div>label {
+            font-size: 11px;
+        }
+
+        .profil {
+            padding: 25px 10px;
+        }
+
+        .profil .bagian {
+            margin-left: 12%;
+        }
+
+        section .bagian .isi_bag img {
+            background-color: #fff;
+            width: 30%;
+        }
+
+        a .karikatur {
+            right: 42%;
+        }
+
+        #logo .logo_content,
+        #maskot .maskot_content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #logo .logo_content .logo {
+            margin-right: 0px;
+        }
+
+        #maskot .maskot_content .maskot {
+            margin-left: 0px;
+        }
+
+        
+    }
+}
+
+
+@media only screen and (max-width : 992px) {
+    @media only screen and (min-width : 768px) {
+
+        #logo .logo_content,
+        #maskot .maskot_content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #logo .logo_content .logo {
+            margin-right: 0px;
+        }
+
+        #maskot .maskot_content .maskot {
+            margin-left: 0px;
+        }
+
+        #tes h3 {
+            margin-bottom: 50px;
+        }
+
+        #timeline {
+            height: auto;
+            flex-direction: column;
+        }
+
+        #timeline::after {
+            height: 90%;
+            width: 5px;
+            left: 50%;
+            top: 7%;
+        }
+
+        .kontainer {
+            width: 200px;
+            height: 200px;
+            left: 0;
+        }
+
+        .kiri {
+            top: 0%;
+            left: -120px;
+            padding-top: 80px;
+        }
+
+        .kanan {
+            padding-top: 70px;
+            top: 0%;
+            left: 120px;
+        }
+
+        .kiri ::after {
+            top: 50%;
+            left: 206px;
+        }
+
+        .kanan ::after {
+            top: 50%;
+            left: -33px;
+        }
+
+        .profil .nav_div>label {
+            font-size: 11px;
+        }
+
+        .profil {
+            padding: 25px 10px;
+        }
+
+        .profil .bagian {
+            margin-left: 12%;
+        }
+
+        section .bagian h2 {
+            align-items: center;
+            text-align: center;
+            padding-left: 55px;
+        }
+
+
+        section .bagian .isi_bag img {
+            background-color: #fff;
+            width: 30%;
+        }
+
+        a .karikatur {
+            right: 45%;
+        }
+    }
+
+}
+
+
+
+@media only screen and (min-width : 1024px) {
+    @media only screen and (min-width : 992px) {
+
+        #logo .logo_content,
+        #maskot .maskot_content {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .kontainer {
+            width: 200px;
+            height: 200px;
+        }
+
+        section .bagian h2 {
+            align-items: center;
+            text-align: center;
+            padding-left: 55px;
+        }
+
+
+        .kiri {
+            bottom: 100%;
+
+        }
+    }
+
+}
+
+@media only screen and (max-width : 359px) {
+    * {
+        display: none;
+    }
+}

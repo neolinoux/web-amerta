@@ -1,0 +1,1514 @@
+/* ============= RESPONSIVE HEADER ============= */
+/* Super Extra small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+
+    header .container .logo {
+        margin-left: 2.5%;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    header .container .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        /* border-top: #0099FF 1px solid;
+        border-bottom: #0099FF 1px solid; */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 0.3s ease-in-out;
+        background: #24285B
+    }
+
+    header .container nav .navbar li {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    header .container nav .navbar a {
+        margin: 10px 0 10px 20px;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+
+    header .container .navbar li:hover {
+        color: #FFFFFF;
+        background-color: #0099FF;
+    }
+
+    header .container .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    header .container .icons {
+        font-size: 15px;   
+    }
+    
+    header .container .icons {
+        margin-left: 75%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        color: #FFFFFF;
+    }
+}
+/* Extra small devices (phones, 420px and up) */
+@media only screen and (min-width: 420px) {
+    header .container .logo {
+        margin-left: 2.5%;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    header .container .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        /* border-top: #000000 0.5px solid;
+        border-bottom: #000000 0.5px solid; */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 0.3s ease-in-out;
+        background: #24285B
+    }
+
+    header .container  nav .navbar li {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    header .container  nav .navbar a {
+        margin: 10px 0 10px 20px;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+
+    header .container .navbar li:hover {
+        color: #FFFFFF;
+        background-color: #0099FF;
+    }
+
+    header .container .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    header .container .icons {
+        font-size: 20px;
+        margin-left: 75%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        color: #FFFFFF;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    header .container .logo {
+        margin-left: 2.5%;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    header .container .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        /* border-top: #000000 0.5px solid;
+        border-bottom: #000000 0.5px solid; */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 0.3s ease-in-out;
+        background: #24285B
+    }
+
+    header .container nav .navbar li {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    header .container nav .navbar a {
+        margin: 10px 0 10px 20px;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    header .container .icons {
+        margin-left: 75%;
+    }
+
+    header .container .navbar li:hover {
+        color: #FFFFFF;
+        background-color: #0099FF;
+    }
+
+    header .container .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        color: #FFFFFF;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    header .container .logo {
+        margin-left: 2.5%;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    header .container .navbar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        clip-path: none;
+        border: none;
+        margin-right: 10%;
+        background-color: #0099FF;
+    }
+
+    header .container nav .navbar li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    header .container nav .navbar a {
+        font-size: 25px;
+        color: #FFFFFF;
+        margin: 0px;
+        border-radius: 5px;
+    }
+
+    header .container .navbar a:hover {
+        color: #0099FF;
+        background-color: white;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+}
+
+
+
+/* RESPONSIVE */
+/* Extra super-saiyan small X3 Pro devices (phones, 360px and down) */
+@media only screen and (max-width: 359px) {
+    * {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    /* Responsive Untuk Kabar 62*/
+    #bg-left {
+        left: -20%;
+    }
+
+    .kabar-62 {
+        height: 960px;
+    }
+
+    .kabar-62 .bg-side {
+        top: -5%;
+    }
+
+    .kabar-62 .bg-slider {
+        top: 56%;
+        width: 100%;
+        height: 420px;
+    }
+
+    .kabar-62 h1 {
+        width: 250px;
+        top: 3%;
+        left: 4%;
+        font-size: 38px;
+    }
+
+    .kabar-62 .desc {
+        width: 300px;
+        top: 14%;
+        left: 4%;
+        font-size: 14px;
+    }
+    
+    .kabar-62 .slider {
+        max-width: 350px;
+        top: 40%;
+        left: 2%;
+    }
+
+    /* Responsive Untuk Info 62*/
+    .info-62 {
+        height: 960px;
+    }
+
+    .info-62 .bg-side {
+        top: -5%;
+    }
+    
+    .info-62 .bg-slider {
+        top: 56%;
+        width: 100%;
+        height: 420px;
+    }
+    
+    .info-62 h1 {
+        top: 3%;
+        right: 4%;
+        width: 250px;
+        font-size: 38px;
+    }
+
+    .info-62 .desc {
+        width: 300px;
+        top: 14%;
+        right: 4%;
+        font-size: 14px;
+    }
+
+    .info-62 .slider {
+        max-width: 350px;
+        top: 40%;
+        right: 2%;
+    }
+
+    /* Responsive Untuk Umum (Semua) */
+    .slider .button {
+        margin: 20px 25px;
+    }
+
+    .slider .button label {
+        margin: 0px 7px;
+    }
+/* responsive card */
+    .slider .main-card .card {
+        margin: 10px 15px;
+    }
+
+    .main-card .cards .card {
+        width: 160px;
+        height: 360px;
+    }
+
+    .card .card-content .image img {
+        width: 160px; 
+        height: 160px;
+    }
+    
+    .card .card-content .details .title {
+        font-size: 15px;
+    }
+
+    .card .card-content .details p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .main-card .cards .card {
+        margin-left: 106%;
+    }
+
+    .card .card-content .image .bottom-side-1 img {
+        width: 140px;
+        top: 35.8%;
+        left: 0;
+        height: 32px;
+    }
+
+    .card .card-content .image .bottom-side-2 {
+        top: 37.5%;
+        width: 180px;
+        height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-2 img {
+        width: 14px;
+        height: 14px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .card .card-content .image .bottom-side-2 p {
+        font-size: 11px;
+        line-height: 42px;
+    }
+
+/* Slider AKtif */
+    #one:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #two:checked ~ .main-card{
+        margin-left: -101.5%;
+    }
+    #three:checked ~ .main-card{
+        margin-left: -201%;
+    }
+    #four:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #five:checked ~ .main-card{
+        margin-left: -101.5%;
+    }
+    #six:checked ~ .main-card{
+        margin-left: -201%;
+    }
+
+    .slider .button {
+        width: 110px;
+        left: 26%;
+    }
+
+    footer {
+        height: 200px;
+        top: 2005px;
+    }
+        
+    .left {
+        width: 100%;
+        height : 150px;
+    }
+        
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 15px;
+    }
+        
+    .left .about-desc {
+        width: 175px;
+        margin: 0 0 0 12.5%;
+        font-size: 11px;
+    }
+            
+    .middle {
+        width: 100%;
+        height : 150px;
+    }
+            
+    .right {
+        width: 100%;
+        height : 150px;
+        }
+            
+    .right h3 {
+        font-size: 15px;
+        margin: 5% 0 0 0;
+    }
+        
+    .right .follow-icon {
+        font-size: 9px;
+        margin: 5% 0 0 0;
+    }
+
+    .right .follow-icon li {
+        width: 30px;
+    }
+        
+    .bottom {
+        height : 50px;
+    }
+        
+    .bottom p {
+        font-size: 11px;
+        margin-top: 3.5%;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 420px) {
+    /* Responsive Untuk Kabar 62*/
+    .kabar-62 {
+        height: 960px;
+    }
+
+    .kabar-62 .bg-side {
+        top: -5%;
+    }
+
+    .kabar-62 .bg-slider {
+        top: 56%;
+        width: 100%;
+        height: 420px;
+    }
+
+    .kabar-62 h1 {
+        width: 250px;
+        top: 4%;
+        left: 4%;
+        font-size: 40px;
+    }
+
+    .kabar-62 .desc {
+        width: 350px;
+        top: 15%;
+        left: 4%;
+        font-size: 16px;
+    }
+
+    .kabar-62 .slider {
+        max-width: 400px;
+        top: 40%;
+        left: 2.5%;
+    }
+
+    /* Responsive Untuk Info 62*/
+    .info-62 {
+        height: 960px;
+    }
+
+    .info-62 .bg-side {
+        top: -5%;
+    }
+    
+    .info-62 .bg-slider {
+        top: 56%;
+        width: 100%;
+        height: 420px;
+    }
+    
+    .info-62 h1 {
+        top: 4%;
+        right: 4%;
+        width: 250px;
+        font-size: 40px;
+    }
+
+    .info-62 .desc {
+        width: 350px;
+        top: 16%;
+        right: 4%;
+        font-size: 16px;
+    }
+
+    .info-62 .slider {
+        max-width: 400px;
+        top: 40%;
+        right: 2.5%;
+    }
+
+    /* Responsive Untuk Umum (semua) */
+    .slider .button {
+        margin: 20px 25px;
+    }
+
+    .slider .button label {
+        margin: 0px 7px;
+    }
+/* responsive card */
+    .slider .main-card .card {
+        margin: 10px 15px;
+    }
+
+    .main-card .cards .card {
+        width: 190px;
+        height: 400px;
+    }
+
+    .card .card-content .image img {
+        width: 185px; 
+        height: 185px;
+    }
+
+    .card .card-content .details .title {
+        font-size: 15px;
+    }
+
+    .card .card-content .details p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .main-card .cards .card {
+        margin-left: 106%;
+    }
+
+    .card .card-content .image .bottom-side-1 img {
+        width: 140px;
+        top: 38.5%;
+        left: 0;
+        height: 32px;
+    }
+
+    .card .card-content .image .bottom-side-2 {
+        top: 40%;
+        width: 180px;
+        height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-2 img {
+        width: 14px;
+        height: 14px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .card .card-content .image .bottom-side-2 p {
+        font-size: 12px;
+        line-height: 42px;
+    }
+
+/* slider aktif */
+    #one:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #two:checked ~ .main-card{
+        margin-left: -102%;
+    }
+    #three:checked ~ .main-card{
+        margin-left: -203%;
+    }
+    #four:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #five:checked ~ .main-card{
+        margin-left: -102%;
+    }
+    #six:checked ~ .main-card{
+        margin-left: -203%;
+    }
+
+    .details .detail {
+        font-size: 15px;
+    }
+
+    .slider .button {
+        width: 110px;
+        left: 30%;
+    }
+        /* Responsive Footer */
+    footer {
+        height: 200px;
+        top: 2005px;
+    }
+        
+    .left {
+        width: 100%;
+        height : 150px;
+    }
+        
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 18px;
+    }
+        
+    .left .about-desc {
+        width: 200px;
+        margin: 0 0 0 12.5%;
+        font-size: 11px;
+    }
+            
+    .middle {
+        width: 100%;
+        height : 150px;
+    }
+            
+    .right {
+        width: 100%;
+        height : 150px;
+        }
+            
+    .right h3 {
+        font-size: 18px;
+        margin: 4% 0 0 0;
+    }
+        
+    .right .follow-icon {
+        font-size: 9px;
+        width: 100%;
+        margin: 4% 0 0 0;
+    }
+
+    .right .follow-icon li {
+        width: 30px;
+    }
+        
+    .bottom {
+        height : 50px;
+    }
+        
+    .bottom p {
+        margin-top: 3%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Responsive Untuk Kabar 62*/
+    .kabar-62 {
+        height: 1040px;
+    }
+
+    .kabar-62 .bg-side {
+        top: -5%;
+    }
+
+    .kabar-62 .bg-slider {
+        top: 60%;
+        width: calc(100% - 30px);
+        height: 400px;
+    }
+
+    .kabar-62 h1 {
+        width: 250px;
+        top: 10%;
+        left: 8%;
+        font-size: 45px;
+    }
+
+    .kabar-62 .desc {
+        width: 500px;
+        top: 21%;
+        left: 8%;
+        font-size: 22px;
+    }
+
+    .kabar-62 .slider {
+        max-width: 500px;
+        top: 47%;
+        left: 8%;
+    }
+
+    /* Responsive Untuk Info 62*/
+    .info-62 {
+        height: 1040px;
+    }
+
+    .info-62 .bg-side {
+        top: -5%;
+    }
+    
+    .info-62 .bg-slider {
+        top: 60%;
+        width: calc(100% - 30px);
+        height: 400px;
+    }
+    
+    .info-62 h1 {
+        top: 10%;
+        right: 8%;
+        width: 250px;
+        font-size: 45px;
+    }
+
+    .info-62 .desc {
+        width: 500px;
+        top: 21%;
+        right: 8%;
+        font-size: 22px;
+    }
+
+    .info-62 .slider {
+        max-width: 500px;
+        top: 47%;
+        right: 8%;
+    }
+
+/* Responsive Untuk Umum (semua) */
+    .slider .button {
+        margin: 20px 25px;
+    }
+
+    .slider .button label {
+        margin: 0px 5px;
+    }
+/* responsive card */
+    .slider .main-card .card {
+        margin: 10px 20px;
+    }
+
+    .main-card .cards .card {
+        width: 225px;
+        height: 375px;
+    }
+
+    .card .card-content .image img {
+        width: 225px; 
+        height: 185px;
+    }
+
+    .card .card-content .details .title {
+        font-size: 18px;
+    }
+
+    .card .card-content .details p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .main-card .cards .card {
+        margin-left: 107%;
+    }
+
+    .card .card-content .image .bottom-side-1 img {
+        width: 145px;
+        top: 41%;
+        left: 0;
+        height: 32px;
+    }
+
+    .card .card-content .image .bottom-side-2 {
+        top: 43%;
+        width: 180px;
+        height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-2 img {
+        width: 14px;
+        height: 14px;
+        margin-left: 12px;
+        margin-right: 5px;
+    }
+
+    .card .card-content .image .bottom-side-2 p {
+        font-size: 13px;
+        line-height: 42px;
+    }
+
+/* Slider Aktif */
+    #one:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #two:checked ~ .main-card{
+        margin-left: -100%;
+    }
+    #three:checked ~ .main-card{
+        margin-left: -200%;
+    }
+    #four:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #five:checked ~ .main-card{
+        margin-left: -100%;
+    }
+    #six:checked ~ .main-card{
+        margin-left: -200%;
+    }
+
+    .details .detail {
+        font-size: 15px;
+    }
+
+    .slider .button {
+        width: 110px;
+        left: 35%;
+    }
+
+    /* Responsive Footer */
+    footer {
+        height: 200px;
+        top: 2165px;
+    }
+    
+    .left {
+        width: 100%;
+        height : 150px;
+    }
+    
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 22px;
+    }
+    
+    .left .about-desc {
+        width: 275px;
+        margin: 2% 0 0 12.5%;
+        font-size: 15px;
+    }
+        
+    .middle {
+        width: 100%;
+        height : 150px;
+    }
+        
+    .right {
+        width: 100%;
+        height : 150px;
+        }
+        
+    .right h3 {
+        font-size: 22px;
+        margin: 6% 0 0 0;
+    }
+    
+    .right .follow-icon {
+        font-size: 12px;
+        width: 100%;
+        margin: 7% 0 0 0;
+    }
+    
+    .right .follow-icon li {
+        width: 40px;
+    }
+
+    .bottom {
+        height :50px;
+    }
+    
+    .bottom p {
+        margin-top: 2.5%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Responsive Untuk Kabar 62*/
+    .kabar-62 {
+        height: 1080px;
+    }
+
+    .kabar-62 .bg-side {
+        top: -5%;
+    }
+
+    .kabar-62 .bg-slider {
+        top: 58%;
+        width: calc(100% - 80px);
+        height: 425px;
+    }
+
+    .kabar-62 h1 {
+        width: 250px;
+        top: 7%;
+        left: 5%;
+        font-size: 45px;
+    }
+
+    .kabar-62 .desc {
+        width: 650px;
+        top: 16%;
+        left: 5%;
+        font-size: 24px;
+    }
+
+    .kabar-62 .slider {
+        max-width: 605px;
+        top: 42.5%;
+        left: 15%;
+    }
+
+    /* Responsive Untuk Info 62*/
+    .info-62 {
+        height: 1080px;
+    }
+
+    .info-62 .bg-side {
+        top: -5%;
+    }
+    
+    .info-62 .bg-slider {
+        top: 58%;
+        width: calc(100% - 100px);
+        height: 425px;
+    }
+    
+    .info-62 h1 {
+        top: 7%;
+        right: 5%;
+        width: 250px;
+        font-size: 45px;
+    }
+
+    .info-62 .desc {
+        width: 650px;
+        top: 17%;
+        right: 5%;
+        font-size: 24px;
+    }
+
+    .info-62 .slider {
+        max-width: 605px;
+        top: 42.5%;
+        right: 15%;
+    }
+
+    /* Responsive Untuk Umum (semua) */
+    .slider .button {
+        margin: 20px 25px;
+    }
+
+    .slider .button label {
+        margin: 0px 5px;
+    }
+/* responsive card */
+    .slider .main-card .card {
+        margin: 10px 25px;
+    }
+
+    .main-card .cards .card {
+        width: 280px;
+        height: 450px;
+    }
+
+    .card .card-content .image img {
+        width: 280px; 
+        height: 240px;
+    }
+
+    .card .card-content .details .title {
+        font-size: 18px;
+    }
+
+    .card .card-content .details p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-1 img {
+        width: 165px;
+        top: 46.5%;
+        left: 0;
+        height: 32px;
+    }
+
+    .card .card-content .image .bottom-side-2 {
+        top: 48.5%;
+        width: 180px;
+        height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-2 img {
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    .card .card-content .image .bottom-side-2 p {
+        font-size: 15px;
+        line-height: 48px;
+    }
+
+    .main-card .cards .card {
+        margin-left: 107%;
+    }
+/* Slider Aktif */
+    #one:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #two:checked ~ .main-card{
+        margin-left: -102%;
+    }
+    #three:checked ~ .main-card{
+        margin-left: -204%;
+    }
+    #four:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #five:checked ~ .main-card{
+        margin-left: -102%;
+    }
+    #six:checked ~ .main-card{
+        margin-left: -204%;
+    }
+
+    .slider .button {
+        left: 37%;
+    }
+
+    /* Responsive Footer */
+    footer {
+        height: 250px;
+        top: 2245px;
+    }
+    
+    .left {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 12.5%;
+        font-size: 24px;
+    }
+    
+    .left .about-desc {
+        width: 270px;
+        margin: 4% 0 0 12.5%;
+        font-size: 15px;
+    }
+        
+    .middle {
+        width: 100%;
+        height : 190px;
+    }
+        
+    .right {
+        width: 100%;
+        height : 190px;
+        }
+        
+    .right h3 {
+        font-size: 24px;
+        margin: 7% 0 0 0;
+    }
+    
+    .right .follow-icon {
+        width: 100%;
+        margin: 8% 0 0 0;
+    }
+
+    .right .follow-icon li {
+        width: 40px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+    
+    .bottom p {
+        margin-top: 2%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Responsive Untuk Kabar 62*/
+    .kabar-62 {
+        height: 1080px;
+    }
+
+    .kabar-62 .bg-side {
+        top: -5%;
+    }
+
+    .kabar-62 .bg-slider {
+        top: 57%;;
+        width: calc(100% - 50px);
+        height: 465px;
+    }
+
+    .kabar-62 h1 {
+        top: 5%;
+        left: 6%;
+        width: 725px;
+        font-size: 50px;
+    }
+
+    .kabar-62 .desc {
+        width: 725px;
+        top: 15%;
+        left: 6%;
+        font-size: 27px;
+    }
+
+    .kabar-62 .slider {
+        max-width: 925px;
+        top: 40%;
+        left: 7%;
+    }
+
+    /* Responsive Untuk Info 62*/
+    .info-62 {
+        height: 1080px;
+    }
+
+    .info-62 .bg-side {
+        top: -5%;
+    }
+    
+    .info-62 .bg-slider {
+        top: 57%;
+        width: calc(100% - 50px);
+        height: 465px;
+    }
+    
+    .info-62 h1 {
+        top: 5%;
+        right: 6%;
+        width: 725px;
+        font-size: 50px;
+    }
+
+    .info-62 .desc {
+        width: 725px;
+        top: 16%;
+        right: 6%;
+        font-size: 27px;
+    }
+
+    .info-62 .slider {
+        max-width: 925px;
+        top: 40%;
+        right: 7%;
+    }
+
+
+    /* Responsive Untuk Umum (Semua) */
+    .slider .button {
+        margin: 20px 25px;
+    }
+
+    .slider .button label {
+        margin: 0px 5px;
+    }
+/* responsive card */
+    .slider .main-card .card {
+        margin: 10px 10px;
+    }
+
+    .main-card .cards .card {
+        width: 280px;
+        height: 430px;
+    }
+
+    .card .card-content .details .title {
+        font-size: 20px;
+    }
+
+    .card .card-content .details p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .card .card-content .image img {
+        width: 280px; 
+        height: 240px;
+    }
+
+    .card .card-content .image .bottom-side-1 img {
+        width: 170px;
+        top: 48.5%;
+        left: 0;
+        height: 32px;
+    }
+
+    .card .card-content .image .bottom-side-2 {
+        top: 50%;
+        width: 180px;
+        height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-2 img {
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    .card .card-content .image .bottom-side-2 p {
+        font-size: 15px;
+        line-height: 48px;
+    }
+
+
+/* slider aktif */
+    #one:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #two:checked ~ .main-card{
+        margin-left: -66.5%;
+    }
+    #three:checked ~ .main-card{
+        margin-left: -100%;
+    }
+    #four:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #five:checked ~ .main-card{
+        margin-left: -66.5%;
+    }
+    #six:checked ~ .main-card{
+        margin-left: -100%;
+    }
+
+    .slider .button {
+        left: 41%;
+    }
+
+    /* Responsive Footer */
+    footer {
+        height: 250px;
+        top: 2245px;
+    }
+
+    .left {
+        width: 100%;
+        height : 190px;
+    }
+
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 15%;
+        font-size: 27px;
+    }
+
+    .left .about-desc {
+        width: 325px;
+        margin: 3.5% 0 0 15%;
+        font-size: 18px;
+    }
+    
+    .middle {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right h3 {
+        font-size: 27px;
+        margin: 7% 0 0 0;
+    }
+
+    .right .follow-icon {
+        width: 100%;
+        margin: 6% 0 0 0;
+        font-size: 15px;
+    }
+
+    .right .follow-icon li {
+        width: 50px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+
+    .bottom p {
+        margin-top: 1.5%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+    /* Responsive untuk kabar 62 */
+    .kabar-62 {
+        height: 1080px;
+    }
+
+    .kabar-62 .bg-side {
+        top: -7%;
+    }
+
+    .kabar-62 .bg-slider {
+        top: 57%;
+        width: calc(100% - 150px);
+        height: 465px;
+    }
+
+    .kabar-62 h1 {
+        top: 5%;
+        left: 6%;
+        width: 725px;
+        font-size: 60px;
+    }
+
+    .kabar-62 .desc {
+        width: 700px;
+        top: 17%;
+        left: 6%;
+        font-size: 29px;
+    }
+
+    .kabar-62 .slider {
+        top: 40%;
+        max-width: 1080px;
+        left: 14%;
+    }
+
+    /* Responsive Untuk Info 62*/
+    .info-62 {
+        height: 1080px;
+    }
+
+    .info-62 .bg-side {
+        top: -7%;
+    }
+    
+    .info-62 .bg-slider {
+        top: 57%;
+        width: calc(100% - 150px);
+        height: 465px;
+    }
+    
+    .info-62 h1 {
+        top: 5%;
+        right: 6%;
+        width: 725px;
+        font-size: 60px;
+    }
+
+    .info-62 .desc {
+        width: 725px;
+        top: 17%;
+        right: 6%;
+        font-size: 29px;
+    }
+
+    .info-62 .slider {
+        top: 40%;
+        max-width: 1080px;
+        right: 14%;
+    }
+
+    /* Responsive Untuk Umum (Semua) */
+    .slider .button {
+        margin: 20px 0;
+    }
+
+    .slider .button label {
+        margin: 0px 5px;
+    }
+/* responsive card */
+    .slider .main-card {
+        margin-left: 0%;
+    }
+
+    .slider .main-card .card {
+        margin: 15px 20px;
+    }
+
+    .main-card .cards .card {
+        width: 300px;
+        height: 475px;
+    }
+
+    .card .card-content .image img {
+        width: 300px; 
+        height: 260px;
+    }
+
+    .card .card-content .image .bottom-side-1 img {
+        width: 180px;
+        top: 48.5%;
+        left: 0;
+        height: 32px;
+    }
+
+    .card .card-content .image .bottom-side-2 {
+        top: 50%;
+        width: 180px;
+        height: 20px;
+    }
+
+    .card .card-content .image .bottom-side-2 img {
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    .card .card-content .image .bottom-side-2 p {
+        font-size: 15px;
+        line-height: 48px;
+    }
+
+    .card .card-content .details .title {
+        font-size: 20px;
+    }
+
+    .card .card-content .details p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+/* Slider Aktif */
+    #one:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #two:checked ~ .main-card{
+        margin-left: -66.5%;
+    }
+    #three:checked ~ .main-card{
+        margin-left: -100%;
+    }
+    #four:checked ~ .main-card {
+        margin-left: 0%;
+    }
+    #five:checked ~ .main-card{
+        margin-left: -66.5%;
+    }
+    #six:checked ~ .main-card{
+        margin-left: -100%;
+    }
+
+    .slider .button {
+        left: 45%;
+    }
+
+    /* Responsive Footer */
+    footer {
+        height: 250px;
+        top: 2250px;
+        bottom: 0; left: 0; right: 0;
+    }
+
+    .left {
+        width: 100%;
+        height : 190px;
+    }
+
+    .left h3 {
+        width: 150px;
+        margin: 5% 0 0 15%;
+        font-size: 29px;
+    }
+
+    .left .about-desc {
+        width: 375px;
+        margin: 2.5% 0 0 15%;
+        font-size: 20px;
+    }
+    
+    .middle {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right {
+        width: 100%;
+        height : 190px;
+    }
+    
+    .right h3 {
+        font-size: 29px;
+        margin: 7% 0 0 0;
+    }
+
+    .right .follow-icon {
+        width: 100%;
+        margin: 6% 0 0 0;
+        font-size: 15px;
+    }
+
+    .right .follow-icon li {
+        width: 50px;
+    }
+
+    .bottom {
+        height : 50px;
+    }
+
+    .bottom p {
+        margin-top: 1%;
+    }
+}

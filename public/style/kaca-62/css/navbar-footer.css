@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    height: 75px;
+    background-color: #0099FF;
+    /* box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.10); */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* === Logo === */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+header .logo .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .logo p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+}
+
+/* === Navigation === */
+header nav {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .navbar li {
+    margin: 0 5px;
+}
+
+header nav .navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+header nav .navbar .icons {
+    cursor: pointer;
+}
+
+header nav .navbar .icons i {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0.2s;
+    }
+}
+/*===== HEADER DAN NAVBAR =====
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    background: #0099FF;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    background-color: #0099FF;
+    justify-content: space-around;
+   
+    color: white;
+    height: 60px;
+    align-items: center;
+}
+
+
+.logo a {
+    display: inline-block;
+    height: 100%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    padding-top: 7.5px;
+    float: left;
+}
+
+.logo a {
+    height: 80%;
+    float: right;
+}
+
+.logo img {
+    height: 90%;
+    border-radius: 100%;
+}
+
+.amerta {
+    height: 100%;
+    width: 20%;
+    float: left;
+    padding-left: 2%;
+}
+
+.amerta p {
+    margin-left: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    margin-top: 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: #0099FF;
+    display: inline-block;
+    padding: 0 10%;
+    background-color: white;
+    border-radius: 7px;
+}
+
+/* Hamburger Menu
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-toggle {
+    margin-right: -35px;
+    }
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -4px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation 
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    background-color: white;
+    transform: scale(0);
+}
+
+*/
+
+/*===== CSS UNTUK SECTION ATAU KONTEN WEB =====*/
+
+
+
+
+/*=====  FOOTER  =====*/
+footer {
+    /* position: absolute; */
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'left middle right'
+        'bottom bottom bottom';
+    background-color: #24285B;
+    gap: 10px;
+    padding: 5px 0 5px 0;
+}
+
+.left { grid-area: left; }
+.middle { grid-area: middle; }
+.right { grid-area: right; }
+.bottom { grid-area: bottom; }
+
+footer > div {
+    background: #24285B;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 50px;
+}
+
+.left h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.right {
+    text-align: center;
+}
+
+.right h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.right .follow-icon {
+    margin-right: 0;
+    margin-left: 0;
+    height: 30px;
+}
+
+footer .fa {   
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+footer .fa:hover {
+    color: #0099FF;
+    transform: scale(150%);
+}
+
+.bottom {
+    width: 100%;
+    background-color: #14173D;
+    text-align: center;
+    justify-content:center;
+    display:flex;
+    align-items: center;
+    
+}
+
+.bottom p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    /* margin-top: 10px; */
+}
