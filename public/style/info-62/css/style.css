@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(../img/BGKABAR.png);
+    background-repeat: repeat;
+    background-size: 350vh;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    height: 75px;
+    background-color: #0099FF;
+    /* box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.10); */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* === Logo === */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+}
+
+header .logo .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header .logo p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+}
+
+/* === Navigation === */
+header nav {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .navbar li {
+    margin: 0 5px;
+}
+
+header nav .navbar a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+header nav .navbar .icons {
+    cursor: pointer;
+}
+
+header nav .navbar .icons i {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0.2s;
+    }
+}
+
+/* JUDUL */
+.container-judul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+    /* border: 1px solid black; */
+}
+
+/* TULISAN JUDUL */
+.tulisan-judul{
+    width: 100%;
+    padding-top: 9.2%;
+    padding-bottom: 12%;
+    margin-left: 7%;
+    /* border: 1px solid black; */
+}
+.judul-halaman{
+    color: #FFFFFF;
+    text-align: left;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    margin: 13px 0;
+    /*top: 15%*/
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+.deskripsi-judul{
+    /* margin: 20px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 32px;
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* or 167% */
+    color: #FFFFFF;
+}
+.container-judul.kabar{
+    margin-top: 20px;
+}
+.tulisan-judul.kabar{
+    padding-top: 7.7%;
+    margin-right:4.2%;
+    margin-left: 0;
+    padding-bottom: 12%;
+    /* border: 1px solid black; */
+}
+.judul-halaman.kabar{
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+    margin-top: 9.2%;
+    margin-right: 9.5%;
+    /* border: 1px solid black; */
+}
+.deskripsi-judul.kabar p{
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+    text-align: right;
+    margin-right: 9.5%;
+    /* border: 1px solid black; */
+}
+
+/* GAMBAR JUDUL */
+.gambar-judul{
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.image-judul{
+    width: 75%;
+    margin-left: 16%;
+    padding-top: 7.5%;
+}
+.image-judul.kabar{
+    width: 68.8%;
+    margin-left: 16%;
+    padding-top: 7.9%;
+}
+
+.bg-judul{
+    position: absolute;
+    max-width: 80%;
+    max-height: 90%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* KONTEN KABAR */
+.slide1 .item9{
+    visibility: hidden;
+    display: none;
+}
+
+.container-content{
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid black; */
+}
+.judul-content{
+    text-align: center;
+    margin: 60px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    /* border: 1px solid black; */
+}
+
+/* KABAR 62 */
+.container-kabar {
+	display: flex;
+	width: 300%;
+	overflow: hidden;
+    position: relative;
+    transition: 0.5s linear;
+    /* border: 2px solid white; */
+}
+
+.grid-kabar{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    gap: 60px;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+
+.grid-kabar > div{
+    text-align: center;
+}
+
+.kabar-item{
+    padding: auto;
+    margin: 10px 10px;
+    font-size: 16px;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.item-kabar{
+    /* border: 2px solid black; */
+    width: 318px;
+    height: 438px;
+    margin: auto;
+    border-radius: 10px;
+    background: url(../img/bgcard.png);
+    background-size: 90vh;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+/* GAMBAR KABAR 62 */
+.container-gambar{
+    position: relative;
+}
+/* artikel */
+.image{
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    z-index: 1;
+    width: 318px;
+    height: 242px;
+}
+
+.image-artikel{
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    z-index: 1;
+    width: 318px;
+    height: 262px;
+}
+/* tanggal */
+.bawahKiri{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    bottom: -2px;
+    left: 0;
+    height: 32px;
+    width: 157px;
+}
+.img.bawahKiri{
+    z-index: 3;
+}
+.bawahKiri img{
+    width: 14px;
+    height: 14px;
+    margin-left: 18px;
+    margin-right: 9px;
+}
+.bawahKiri p{
+    color: #FFFFFF;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+/* TEXT KABAR 62 */
+.text-kabar{
+    padding: 6px 20px 15px;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+    z-index: 2;
+}
+.text-kabar div{
+    color: #FBDC4C;
+    font-weight: 500;
+    /* margin-top: 10px; */
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    text-align: center;
+    /* font-size: 24px;
+    line-height: 25px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.text-kabar p{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    margin: 10px 5px 5px 5px;
+}
+
+/* EFEK HOVER CARD */
+.kabar-item .item-kabar:hover{
+    transform: translateY(-12.5px);
+}
+
+/* EFEK OVERLAY CARD */
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 139, 11, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 5;
+}
+/* read more button di tengah card */
+.read-more-btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(red, green, blue, 0.2);
+}
+
+.read-more-btn:hover {
+    color: #FFFFFF;
+    background-color: lightskyblue;
+    transition: all ease 0.3s;
+}
+
+.item-kabar:hover .overlay {
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+/* SLIDER */
+.container-slide{
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+input[type=radio]{
+    visibility: hidden;
+}
+
+.container-slide .button{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.container-slide .button label{
+    display: flex;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    transition: all 0.4s ease;
+}
+
+.container-slide .button input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #24285B;    
+    font-size: 30px;
+}
+
+.container-slide .button{
+    margin: 100px 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 44px;
+}
+
+#slide1:checked ~ .button .one{
+    background-color: #0CCA98;
+}
+#slide2:checked ~ .button .two{
+    background-color: #0CCA98;
+}
+#slide3:checked ~ .button .three{
+    background-color: #0CCA98;
+}
+
+#slide1:checked ~ .container-kabar{
+    margin-left: 0;
+}
+#slide2:checked ~ .container-kabar{
+    margin-left: -100%;
+}
+#slide3:checked ~ .container-kabar{
+    margin-left: -200%;
+}
+
+/* Atur Batas Slider */
+#slide1:checked ~ .button #prev{
+    z-index: -1;
+    color: #24285bb0;
+}
+#slide1:checked ~ .button #next{
+    z-index: -1;
+    color: #24285bb0;
+}
+
+/*=====  FOOTER  =====*/
+footer {
+    /* position: absolute; */
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'left middle right'
+        'bottom bottom bottom';
+    background-color: #24285B;
+    gap: 10px;
+    padding: 5px 0 0;
+}
+
+.left { grid-area: left; }
+.middle { grid-area: middle; }
+.right { grid-area: right; }
+.bottom { grid-area: bottom; }
+
+footer > div {
+    background: #24285B;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 50px;
+}
+
+.left h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.right {
+    text-align: center;
+}
+
+.right h3 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.right .follow-icon {
+    margin-right: 0;
+    margin-left: 0;
+    height: 30px;
+}
+
+.fa {   
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+footer .fa:hover {
+    color: #0099FF;
+    transform: scale(150%);
+}
+
+.bottom {
+    width: 100%;
+    background-color: #14173D;
+    text-align: center;
+    justify-content:center;
+    display:flex;
+    align-items: center;
+}
+
+.bottom p {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    /* margin-top: 10px; */
+}

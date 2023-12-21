@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+        "nav nav"
+        "judul judul"
+        "artikel rekomendasi"
+        "footer footer";
+    grid-template-rows: 75px auto auto auto; 
+    grid-template-columns: 67% auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 10px;
+    background-color: #f1f1f1;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    color: #24285B;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    grid-area: nav;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    /* background-color: red; */
+}
+
+footer {grid-area: footer;}
+/* artikelllllllllllllllllllllllllllllllllllllllllllllllllllllllll */
+.head-artikel {
+    grid-area: judul;
+    font-family: 'Poppins';
+    /* background-color: red; */
+    padding-left: 8%;
+    /* padding-top: 100px; */
+}
+
+.head-artikel p {
+    font-size: 18px;
+}
+.head-artikel h1{
+    font-size: 59px;
+    /* padding-left: 10%; */
+}
+
+article {
+    grid-area: artikel;
+    font-family: 'Open Sans';
+    padding-left: 11%;
+}
+
+article p {
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+}
+
+/* publikasi lainnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+aside {
+    grid-area: rekomendasi;
+    font-family: 'Open Sans';
+    padding-right: 22%;
+}
+aside .publikasi-lainnya{
+    text-align: center;
+}
+aside h2, aside ul li h2{
+    font-size: 25px;
+}
+aside h2.publikasi-lainnya{
+    color: #24285B;
+}
+aside p {
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li{
+    /* border-bottom: 5px solid black; */
+    margin: 10% 0;
+    /* background-color: yellow; */
+}
+aside li.sekat{
+    padding: 0;
+    display: block;
+    background-color: black;
+    border: 2px solid black;
+}
+aside ul li:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+aside ul li .kotak-gambar{
+    align-self: center;
+}
+
+aside ul li .deskripsi-publikasi-lain{
+    padding: 0 3% 3% 3%;    
+    margin: 10px 0;
+}
+aside ul li .deskripsi-publikasi-lain h2, aside ul li .deskripsi-publikasi-lain p {
+    margin: 5px 0;
+}
+
+aside ul li a{
+    color: #24285B;
+}
+aside ul li a:hover{
+    color: #0099FF;
+}
+
+aside a{
+    display: block;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .head-artikel{
+        padding-left: 7%;
+    }
+    .head-artikel h1{
+        font-size: 45px;
+    }
+    .head-artikel p{
+        font-size: 16px;
+    }
+    article{
+        padding-left: 10%;
+    }
+    article p{
+        font-size: 16px;
+    }
+    
+    aside h2, aside ul li h2{
+        font-size: 20px;
+    }
+    aside p {
+        font-family: 'Poppins';
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    body{
+        grid-template-areas:
+        "nav nav"
+        "judul judul"
+        "artikel artikel"
+        "rekomendasi rekomendasi"
+        "footer footer";
+    }
+
+    /* .head-artikel{
+        margin-top: 75px;
+    } */
+    
+    .head-artikel,article,aside{
+        padding: 0 7%;
+    }
+    .head-artikel h1{
+        font-size: 35px;
+    }
+    .head-artikel p{
+        font-size: 12px;
+    }
+    article p{
+        font-size: 12px;
+    }
+    
+    aside h2, aside ul li h2{
+        font-size: 14px;
+    }
+    aside p {
+        font-size: 11px;
+    }
+    aside ul li{
+        margin: 3% 0;
+        padding: 0;
+    }
+    aside ul li a{
+        display: flex;
+        flex-direction: row;
+    }
+    aside ul li .kotak-gambar{
+        flex: 1;
+        width: 100px;
+        height: 10%;
+        overflow: hidden;
+    }
+    aside ul li .deskripsi-publikasi-lain{
+        flex: 3;
+        /* background-color: yellow; */
+    }
+    aside ul li.sekat{
+        border: 1px solid black;
+    }
+    
+}
+@media only screen and (max-width:359px) {
+    *{
+        display: none;
+    }
+}

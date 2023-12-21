@@ -35,6 +35,11 @@ Route::get('/', fn () => view('guest.landingpage_2'))->name('home_2');
 Route::get('/kabar-dan-info-62', fn () => view('guest.kabar-dan-info-62'))->name('kabar-dan-info-62');
 Route::get('/kaca-62', fn () => view('guest.kaca-62'))->name('kaca-62');
 Route::get('/kreasi-62', fn () => view('guest.kreasi-62'))->name('kreasi-62');
+Route::get('/info-62', fn () => view('guest.info-62'))->name('info-62');
+Route::get('/kabar-62', fn () => view('guest.kabar-62'))->name('kabar-62');
+
+Route::get('/artikel/{page}', fn ($page) => view('guest.artikel.' . $page))->name('artikel');
+
 
 Route::get('/angkatan60', fn () => view('guest.landingpage'))->name('home');
 Route::get('/proker', fn () => view('guest.proker'))->name('proker');

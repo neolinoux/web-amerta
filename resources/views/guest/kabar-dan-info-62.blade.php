@@ -110,7 +110,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/hari-kartini.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/hari-kartini" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -140,7 +140,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/wafat-isa-al-masih.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/wafat-isa-al-masih" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -171,7 +171,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/ramadhan-1443-h.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/ramadhan-1443-h" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -235,7 +235,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/isra-miraj.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/isra-miraj" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -256,7 +256,7 @@
                     <label for="three" class="three"></label>
                     <!-- tombol masuk dunia anime -->
                     <div class="btn-more">
-                        <a href="kabar-62.html">
+                        <a href="kabar-62">
                             <button type="submit">More ></button>
                         </a>
                     </div>
@@ -303,7 +303,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/oc-gasendra.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/oc-gasendra" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -334,7 +334,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/kuas-itu.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/kuas-itu" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -364,7 +364,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/doa-bersama-uts.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/doa-bersama-uts" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -395,7 +395,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/elipsis.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/elipsis" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -426,7 +426,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/virtual-blind-date.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/virtual-blind-date" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -457,7 +457,7 @@
                                     </div>
                                     <!-- efek overlay -->
                                     <div class="overlay">
-                                        <a href="../artikel/mean-data.html" class="read-more-btn">Read More</a>
+                                        <a href="../artikel/mean-data" class="read-more-btn">Read More</a>
                                     </div>
                                 </div>
                                 <!-- kotak untuk detail isi konten -->
@@ -479,7 +479,7 @@
                     <label for="six" class="six"></label>
                     <!-- tombol masuk dunia anime -->
                     <div class="btn-more">
-                        <a href="info-62.html">
+                        <a href="info-62">
                             <button type="submit">More ></button>
                         </a>
                     </div>
