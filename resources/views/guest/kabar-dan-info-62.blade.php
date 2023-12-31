@@ -23,9 +23,12 @@
                 <p>Amerta</p>
             </a>
             <!-- Menu Navigasi -->
-            <nav>
+            <nav style="margin-right: 8%;">
                 <ul class="navbar">
-                    <li onclick="location.href = '../';"><a href="../">Home</a></li>
+                    <li onclick="location.href = '/';"><a href="/">Home</a></li>
+                    <li onclick="location.href = '/konsultasi';"><a href="/konsultasi">Konsultasi</a></li>
+                    <li onclick="location.href = '/sambat';"><a href="/sambat">Sambat</a></li>
+                    <li onclick="location.href = '/informasi';"><a href="/informasi">Informasi</a></li>
                     <li onclick="location.href = 'kabar-dan-info-62';"><a href="kabar-dan-info-62">News</a></li>
                     <li onclick="location.href = 'kaca-62';"><a href="kaca-62">Gallery</a></li>
                     <li onclick="location.href = 'kreasi-62';"><a href="kreasi-62">About</a></li>
